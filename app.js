@@ -7,9 +7,16 @@ burger.addEventListener('click',() => {
     burger.classList.toggle('burger-close')
 })
 
-window.onscroll = () => {
-    scrollY > 500 ? navbar.classList.add('nav-bg') : navbar.classList.remove('nav-bg')
-}
+// window.onscroll = () => {
+
+//     if(scrollY > 500) {
+//       navbar.classList.add('nav-bg')
+//       navlink.classList.add('nav-bg')
+//     } else {
+//       navbar.classList.remove('nav-bg')
+//       navlink.classList.remove('nav-bg')
+//     }
+// }
 
 function reveal() {
     var reveals = document.querySelectorAll(".reveal");
