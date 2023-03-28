@@ -1,5 +1,6 @@
 const burger = document.querySelector('.burger')
 const navlink = document.querySelector('.navlinks')
+const navlinks = document.querySelectorAll('.navlinks li')
 const navbar = document.querySelector('nav')
 
 // navbar links navigation
@@ -29,6 +30,14 @@ burger.addEventListener('click',() => {
     navlink.classList.toggle('nav-active')
     burger.classList.toggle('burger-close')
 })
+
+navlinks.forEach(link => {
+  link.addEventListener('click', () => {
+    navlink.classList.remove('nav-active')
+    burger.classList.remove('burger-close')
+  })
+})
+
 
 // window.onscroll = () => {
 
