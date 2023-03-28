@@ -79,14 +79,13 @@ nav {
 .navlinks li {
     list-style-type: none;
     margin: 0.4rem 0;
-    color: var(--nav-pri-clr);
     cursor: pointer;
 }
 
-/* .navlinks li a {
+.navlinks li a {
     text-decoration: none;
     color: var(--nav-pri-clr);
-} */
+}
 
 .burger div {
     height: 4px;
@@ -294,7 +293,7 @@ section {
 }
 
 .contact form {
-    width: 65%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
@@ -371,6 +370,7 @@ section {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+    align-items: start;
 }
 
 .footer .main .footer-logo {
@@ -549,8 +549,6 @@ section {
         opacity: 1;
     }
 }
-
-
 
 @media only screen and (max-width: 960px) {
     body {

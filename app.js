@@ -3,29 +3,6 @@ const navlink = document.querySelector('.navlinks')
 const navlinks = document.querySelectorAll('.navlinks li')
 const navbar = document.querySelector('nav')
 
-// navbar links navigation
-const logo = document.querySelector('.logo img')
-
-logo.addEventListener('click', () => window.scroll(0,0))
-
-const whyUs = document.querySelector('#why-us')
-const whyUsBtn = document.querySelector('#why-us-btn')
-
-whyUsBtn.addEventListener('click',() => whyUs.scrollIntoView())
-
-const weProvide = document.querySelector('#we-provide')
-const weProvideBtn = document.querySelector('#we-provide-btn')
-
-weProvideBtn.addEventListener('click',() => weProvide.scrollIntoView())
-
-const contact = document.querySelector('#contact')
-const contactBtn = document.querySelector('#contact-btn')
-
-contactBtn.addEventListener('click',() => contact.scrollIntoView())
-
-
-
-
 burger.addEventListener('click',() => {
     navlink.classList.toggle('nav-active')
     burger.classList.toggle('burger-close')
@@ -67,6 +44,4 @@ function reveal() {
 
   window.addEventListener("scroll", reveal);
 
-  // To check the scroll position on page load
-//   reveal();
 
