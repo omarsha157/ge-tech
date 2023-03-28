@@ -70,7 +70,7 @@ nav {
 }
 
 .navlinks {
-    width: 40%;
+    width: 50%;
     display: flex;
     justify-content: space-between;
     transform: translateY(7px);
@@ -294,7 +294,7 @@ section {
 }
 
 .contact form {
-    width: 50%;
+    width: 65%;
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
@@ -551,6 +551,7 @@ section {
 }
 
 
+
 @media only screen and (max-width: 960px) {
     body {
         overflow-x: hidden;
@@ -646,7 +647,5 @@ section {
     .footer .main .footer-logo {
         transform: translateX(-30px);
     }
-
-
-
 }
+
