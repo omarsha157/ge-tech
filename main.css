@@ -80,6 +80,7 @@ nav {
     list-style-type: none;
     margin: 0.4rem 0;
     color: var(--nav-pri-clr);
+    cursor: pointer;
 }
 
 /* .navlinks li a {
@@ -548,7 +549,6 @@ section {
         opacity: 1;
     }
 }
-
 
 
 @media only screen and (max-width: 960px) {
