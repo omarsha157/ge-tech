@@ -66,6 +66,7 @@ nav {
     width: 70%;
     object-fit: cover;
     transform: translateX(-27px);
+    cursor: pointer;
 }
 
 .navlinks {
@@ -78,12 +79,13 @@ nav {
 .navlinks li {
     list-style-type: none;
     margin: 0.4rem 0;
-}
-
-.navlinks li a {
-    text-decoration: none;
     color: var(--nav-pri-clr);
 }
+
+/* .navlinks li a {
+    text-decoration: none;
+    color: var(--nav-pri-clr);
+} */
 
 .burger div {
     height: 4px;
@@ -275,7 +277,9 @@ section {
     /* height: 100vh; */
     background-image: url('./assets/Untitled-1.jpg');
     object-fit: cover;
+    background-size: cover;
     background-position: center;
+    color: var(--nav-pri-clr);
 }
 
 .contact .title {
@@ -445,28 +449,44 @@ section {
 
 .footer .accent {
     position: absolute;
-    left: 1rem;
-    top: 1rem;
-    z-index: -1;
+    left: -200px;
+    top: 2rem;
+    /* z-index: 1; */
 }
 
 .footer .accent div {
-    height: 80px;
-    width: 40px;
+    height: 60px;
+    width: 200px;
     margin: 1rem;
-    border-radius: 1rem;
+    border-radius: 0.7rem;
+    transition: transform 0.4s ease-in-out;
 }
 
 .footer .accent .clr-1 {
-    background-color: black;
+    transform: translateX(100px) skew(-20deg,0);
+    border: 2px solid black;
+    
+}
+
+.footer .accent .clr-1:hover {
+    transform: translateX(130px) skew(-20deg,0);
 }
 
 .footer .accent .clr-2 {
-    background-color: var(--secondary-clr);
+    transform: translateX(70px) skew(-20deg,0);
+    border: 2px solid var(--secondary-clr);
+}
+.footer .accent .clr-2:hover {
+    transform: translateX(90px) skew(-20deg,0);
 }
 
 .footer .accent .clr-3 {
-    background-color: var(--primary-clr);
+    transform: translateX(40px) skew(-20deg,0);
+    border: 2px solid var(--primary-clr);
+}
+
+.footer .accent .clr-3:hover {
+    transform: translateX(60px) skew(-20deg,0);
 }
 
 
